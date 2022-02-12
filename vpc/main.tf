@@ -3,6 +3,6 @@ output "ENV" {
 }
 
 variable "ENV" {
-  type = number
+  type = string
 
 }
