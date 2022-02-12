@@ -35,4 +35,4 @@ dev-destroy: clean ## Create Dev Environment
 prod-destroy: clean ## Create Dev Environment
 
 	@terraform init -backend-config=env/dev-backend.tfvars
-	@terraform apply -auto-approve -var-file=env/prod.tfvars
+	@terraform destroy -auto-approve -var-file=env/prod.tfvars
