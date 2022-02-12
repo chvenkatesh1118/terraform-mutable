@@ -12,7 +12,8 @@ help:
 
 clean:
 	@rm -rf .terraform
-
+s3:
+   @terraform apply -auto-approve file=env/s3.tf
 dev-apply: clean ## Create Dev Environment
 	@terraform init -backend-config=env/dev-backend.tfvars
 	@terraform apply -auto-approve -var-file=env/dev.tfvars
