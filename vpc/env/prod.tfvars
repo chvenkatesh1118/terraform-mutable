@@ -1,3 +1,3 @@
 ENV = "prod"
 
-cidr_block1 = "10.1.1.0/20"
+CIDR_BLOCK= "10.1.1.0/20"

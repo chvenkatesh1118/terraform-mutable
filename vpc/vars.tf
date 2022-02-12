@@ -1,3 +1,3 @@
 variable "ENV" {}
 
-variable cidr_block1 {}
+variable "CIDR_BLOCK" {}

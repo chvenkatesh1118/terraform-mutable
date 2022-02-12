@@ -1,6 +1,6 @@
-resource "aws_subnet" "main" {
+resource "aws_subnet" "var.ENV" {
   vpc_id     = aws_vpc.robo.id
-  cidr_block = var.cidr_block1
+  cidr_block = var.CIDR_BLOCK
 
   tags = {
     Name = "var.ENV"

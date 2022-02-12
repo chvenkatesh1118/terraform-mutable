@@ -1,3 +1,2 @@
 ENV = "dev"
-
-cidr_block1 = "10.1.0.0/20"
+CIDR_BLOCK = "10.1.0.0/20"
