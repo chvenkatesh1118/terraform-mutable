@@ -1,7 +1,8 @@
 output "ENV" {
- value = var.env
+ value = var. ENV
 }
 
 variable "ENV" {
+  type = number
 
 }
