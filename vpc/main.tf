@@ -3,5 +3,5 @@ output "ENV" {
 }
 
 variable "ENV" {
-  type = string
+
 }
