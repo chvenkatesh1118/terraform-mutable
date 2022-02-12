@@ -1,2 +1,3 @@
 ENV = "dev"
+VPC_CIDR_BLOCK = "10.1.0.0/28"
 CIDR_BLOCK = "10.1.1.0/28"
