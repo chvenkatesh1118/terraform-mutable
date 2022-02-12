@@ -3,6 +3,6 @@ resource "aws_subnet" "main" {
   cidr_block = var.CIDR_BLOCK
 
   tags = {
-    Name = "var.ENV"
+    Name = var.ENV
   }
 }
