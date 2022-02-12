@@ -13,17 +13,17 @@ help:
 dev-apply: ## creating dev environment
 
    @terraform init  -backend-config=env/dev-backend.tfvars
-   @terraform apply -auto-aprove -var-file=env/dev.tfvars
+   @terraform apply -auto-approve -var-file=env/dev.tfvars
 
 prod-apply: ## creating prod environment
 
    @terraform init  -backend-config=env/prod-backend.tfvars
-   @terraform apply -auto-aprove -var-file=env/prod.tfvars
+   @terraform apply -auto-approve -var-file=env/prod.tfvars
 
 dev-destroy: ## destroy dev environment
 
       @terraform init  -backend-config=env/dev-backend.tfvars
-      @terraform destroy-auto-aprove -var-file=env/dev.tfvars
+      @terraform destroy-auto-approve -var-file=env/dev.tfvars
 
    prod-destroy: ## destroy prod environment
 
