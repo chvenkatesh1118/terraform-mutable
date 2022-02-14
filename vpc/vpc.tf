@@ -1,6 +1,8 @@
 resource "aws_vpc" "robo" {
-  cidr_block       = "10.1.0.0/16"
+  count = 2
+  cidr_block       = var.VPC_CIDR_MAIN
   instance_tenancy = "default"
+  aws_availability_zone = var.AZS
 
   tags = {
     Name = "robo"
