@@ -19,7 +19,3 @@ db-apply: clean
 	@terraform init -backend-config=db/dev-backend.tfvars
 	@terraform apply -auto-approve -var-file=db/dev.tfvars
 
-db-destroy: clean ## Create Dev Environment
-
-    @terraform init -backend-config=db/dev-backend.tfvars
-    @terraform destroy -auto-approve -var-file=db/dev.tfvars
