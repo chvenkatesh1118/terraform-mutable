@@ -16,6 +16,6 @@ clean:
 
 db-apply: clean
 
-	@terraform init -backend-config=db/dev-backend.tfvars
+	@terraform init -backend-config=db
 	@terraform apply -auto-approve
 
