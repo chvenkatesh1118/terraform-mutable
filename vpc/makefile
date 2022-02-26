@@ -19,6 +19,10 @@ dev-apply: clean
 	@terraform init -backend-config=env/dev-backend.tfvars
 	@terraform destroy -auto-approve -var-file=env/dev.tfvars
 
+dev-destroy: clean
+	@terraform init -backend-config=env/dev-backend.tfvars
+	@terraform destroy -auto-approve -var-file=env/dev.tfvars
+
 
 
 
